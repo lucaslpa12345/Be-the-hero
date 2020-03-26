@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+.incidentContainer { 
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.incidentContainer  .conteudo { 
+   width: 100%;
+   padding: 96px;
+   background-color: #f0f0f5;
+   box-shadow: 0 0 50px rgb(141, 140, 140);
+   border-radius: 8px;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.incidentContainer   .conteudo section{ 
+    width: 100%;
+    max-width: 1000px;
+
+   
+  
+    
+}
+.incidentContainer  .conteudo section img{ 
+   margin-bottom: 60px;
+}
+.incidentContainer  .conteudo section p { 
+    width: 400px;
+    font: 400 20px Roboto, sans-serif;
+ 
+    -webkit-font-smoothing: antialiased;
+}
+
+.incidentContainer .conteudo form h1 { 
+   margin: 64 px 0 32px;
+   font-size: 25px;
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: center;
+
+}
+
+
+   
+
+.incidentContainer .conteudo form  input { 
+   margin-top: 9px;
+}
+.incidentContainer .conteudo form  textarea { 
+    width: 100%;
+    min-height: 140px;
+    border: 1px solid #dcdce6;
+    border-radius: 7px;
+    padding: 16px 24px;
+    line-height: 24px;
+    margin-top: 10px;
+    resize: vertical;
+    
+}
+.incidentContainer  .conteudo form .buttonGrup {
+   display: flex;
+}
+
+.incidentContainer  .conteudo form .inputGrup button + button { 
+   margin-left: 9px;
+}
