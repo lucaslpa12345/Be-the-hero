@@ -6,16 +6,20 @@ import { FiPower,FiTrash2 }    from 'react-icons/fi'
 import api from '../../services/api'
 
 
-export default function perfil () { 
+export default function Perfil () { 
+
+
   
    const history = useHistory()
   
   const [incidents, setIncidents] = useState([])
 
-  const ongId = localStorage.getItem('ongID')
+  const ongId = localStorage.getItem('ongId')
 
   const ongNome = localStorage.getItem('ongNome')
-  useEffect(() => { api.get('perfil', {headers: {Authorization: ongId,} }).then(response => setIncidents(response.data) )  }, [ongId] )
+  
+  useEffect(() => { api.get('perfil', {headers: {Authorization: ongId,} }).then
+  (response => { setIncidents(response.data)} ) },  [ongId] )
 
    async function handleDeleteIncidente(id) { 
      try { 

@@ -9,7 +9,7 @@ import api from '../../services/api'
 
 export default function Login()  { 
 const [id, setID] = useState()
-const hisstory = useHistory()
+const history = useHistory()
 
 
 async function handleLogin(e) {
@@ -21,7 +21,7 @@ async function handleLogin(e) {
      localStorage.setItem('ongNome', response.data.nome)
 
      history.push('/perfil')
-  } catch(error) {'Falha ao logar ' }
+  } catch(error) {alert('Falha ao logar') }
 
 }
 
